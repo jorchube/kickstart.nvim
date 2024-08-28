@@ -647,6 +647,9 @@ require('lazy').setup({
       local ensure_installed = vim.tbl_keys(servers or {})
       vim.list_extend(ensure_installed, {
         'stylua', -- Used to format Lua code
+        'pyright',
+        'ruff',
+        'rust_analyzer',
       })
       require('mason-tool-installer').setup { ensure_installed = ensure_installed }
 
@@ -835,13 +838,14 @@ require('lazy').setup({
       -- Load the colorscheme here.
       -- Like many other themes, this one has different styles, and you could load
       -- any other, such as 'tokyonight-storm', 'tokyonight-moon', or 'tokyonight-day'.
-      vim.cmd.colorscheme 'tokyonight-night'
+      vim.cmd.colorscheme 'tokyonight-moon'
 
       -- You can configure highlights by doing something like:
       vim.cmd.hi 'Comment gui=none'
     end,
   },
 --]]
+  --[[
   {
     'Shatur/neovim-ayu',
     confir = function()
@@ -853,6 +857,14 @@ require('lazy').setup({
     end,
     init = function()
       vim.cmd.colorscheme 'ayu-mirage'
+    end,
+  },
+--]]
+  {
+    'catppuccin/nvim',
+    name = 'catppuccin',
+    init = function()
+      vim.cmd.colorscheme 'catppuccin-frappe'
     end,
   },
   -- Highlight todo, notes, etc in comments
@@ -901,7 +913,7 @@ require('lazy').setup({
     main = 'nvim-treesitter.configs', -- Sets main module to use for opts
     -- [[ Configure Treesitter ]] See `:help nvim-treesitter`
     opts = {
-      ensure_installed = { 'bash', 'c', 'diff', 'html', 'lua', 'luadoc', 'markdown', 'markdown_inline', 'query', 'vim', 'vimdoc' },
+      ensure_installed = { 'bash', 'c', 'diff', 'html', 'lua', 'luadoc', 'markdown', 'markdown_inline', 'query', 'vim', 'vimdoc', 'python', 'rust' },
       -- Autoinstall languages that are not installed
       auto_install = true,
       highlight = {
