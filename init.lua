@@ -205,6 +205,7 @@ vim.keymap.set('n', 'gqp', ':cprev<CR>', { desc = '[G]o to [P]rev [Q]uickfix lis
 vim.opt.foldmethod = 'expr'
 vim.opt.foldexpr = 'nvim_treesitter#foldexpr()'
 vim.opt.foldenable = false -- Disable folding on startup
+vim.opt.foldlevel = 99 -- Do not fold everything at once
 
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
