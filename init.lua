@@ -201,6 +201,11 @@ vim.keymap.set('n', 'gq', '', { desc = '[Q]uickfix list' })
 vim.keymap.set('n', 'gqn', ':cnext<CR>', { desc = '[G]o to [N]ext [Q]uickfix list entry' })
 vim.keymap.set('n', 'gqp', ':cprev<CR>', { desc = '[G]o to [P]rev [Q]uickfix list entry' })
 
+-- Code folding
+vim.opt.foldmethod = 'expr'
+vim.opt.foldexpr = 'nvim_treesitter#foldexpr()'
+vim.opt.foldenable = false -- Disable folding on startup
+
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
 
