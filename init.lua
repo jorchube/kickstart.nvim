@@ -210,6 +210,9 @@ vim.opt.foldexpr = 'nvim_treesitter#foldexpr()'
 vim.opt.foldenable = false -- Disable folding on startup
 vim.opt.foldlevel = 99 -- Do not fold everything at once
 
+-- Terminal
+vim.keymap.set('n', '<leader>$', ':split|terminal<CR>', { desc = 'Open Terminal in horizontal split' })
+
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
 
