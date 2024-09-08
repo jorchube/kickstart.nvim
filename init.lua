@@ -205,11 +205,10 @@ vim.keymap.set('n', 'gqn', ':cnext<CR>', { desc = '[G]o to [N]ext [Q]uickfix lis
 vim.keymap.set('n', 'gqp', ':cprev<CR>', { desc = '[G]o to [P]rev [Q]uickfix list entry' })
 
 -- Code folding
-vim.opt.foldenable = true -- Disable folding on startup
 vim.opt.foldmethod = 'expr'
 vim.opt.foldexpr = 'nvim_treesitter#foldexpr()'
 vim.opt.foldcolumn = 'auto'
-vim.opt.foldlevel = 99 -- Do not fold everything at once
+vim.opt.foldlevelstart = 99 -- Do not fold everything at start
 
 -- Terminal
 vim.keymap.set('n', '<leader>$', ':split|terminal<CR>', { desc = 'Open Terminal in horizontal split' })
