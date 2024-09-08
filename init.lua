@@ -209,6 +209,14 @@ vim.opt.foldmethod = 'expr'
 vim.opt.foldexpr = 'nvim_treesitter#foldexpr()'
 vim.opt.foldcolumn = 'auto'
 vim.opt.foldlevelstart = 99 -- Do not fold everything at start
+-- Workaround: Load folds when opening buffers through commands or Telescope
+vim.api.nvim_create_autocmd('BufEnter', {
+  callback = function()
+    vim.schedule(function()
+      vim.opt.foldmethod = vim.opt.foldmethod
+    end)
+  end,
+})
 
 -- Terminal
 vim.keymap.set('n', '<leader>$', ':split|terminal<CR>', { desc = 'Open Terminal in horizontal split' })
