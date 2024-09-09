@@ -201,6 +201,8 @@ vim.keymap.set('n', 'gbc', ':bw<CR>', { desc = '[C]lose [B]uffer' })
 
 -- Quickfix list
 vim.keymap.set('n', 'gq', '', { desc = '[Q]uickfix list' })
+vim.keymap.set('n', 'gqo', ':copen<CR>', { desc = '[O]pen the [Q]uickfix list' })
+vim.keymap.set('n', 'gqc', ':cclose<CR>', { desc = '[C]lose the [Q]uickfix list' })
 vim.keymap.set('n', 'gqn', ':cnext<CR>', { desc = '[G]o to [N]ext [Q]uickfix list entry' })
 vim.keymap.set('n', 'gqp', ':cprev<CR>', { desc = '[G]o to [P]rev [Q]uickfix list entry' })
 
