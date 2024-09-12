@@ -197,7 +197,9 @@ vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper win
 vim.keymap.set('n', 'gb', '', { desc = 'Buffers' })
 vim.keymap.set('n', 'gbn', ':bn<CR>', { desc = 'Go to [N]ext [B]uffer' })
 vim.keymap.set('n', 'gbp', ':bp<CR>', { desc = 'Go to [P]revious [B]uffer' })
-vim.keymap.set('n', 'gbc', ':bw<CR>', { desc = '[C]lose [B]uffer' })
+vim.keymap.set('n', ']b', ':bn<CR>', { desc = 'Next buffer' })
+vim.keymap.set('n', '[b', ':bp<CR>', { desc = 'Previous buffer' })
+vim.keymap.set('n', '<leader>x', ':bw<CR>', { desc = 'Close buffer' })
 
 -- Quickfix list
 vim.keymap.set('n', 'gq', '', { desc = '[Q]uickfix list' })
