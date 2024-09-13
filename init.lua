@@ -199,7 +199,8 @@ vim.keymap.set('n', 'gbn', ':bn<CR>', { desc = 'Go to [N]ext [B]uffer' })
 vim.keymap.set('n', 'gbp', ':bp<CR>', { desc = 'Go to [P]revious [B]uffer' })
 vim.keymap.set('n', ']b', ':bn<CR>', { desc = 'Next buffer' })
 vim.keymap.set('n', '[b', ':bp<CR>', { desc = 'Previous buffer' })
-vim.keymap.set('n', '<leader>x', ':bw<CR>', { desc = 'Close buffer' })
+vim.keymap.set('n', '<leader>x', ':bw<CR>', { desc = 'Close current buffer' })
+vim.keymap.set('n', '<leader>X', ':bufdo bw<CR>', { desc = 'Close all buffers' })
 
 -- Quickfix list
 vim.keymap.set('n', 'gq', '', { desc = '[Q]uickfix list' })
