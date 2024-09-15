@@ -199,7 +199,9 @@ vim.keymap.set('n', 'gbn', ':bn<CR>', { desc = 'Go to [N]ext [B]uffer' })
 vim.keymap.set('n', 'gbp', ':bp<CR>', { desc = 'Go to [P]revious [B]uffer' })
 vim.keymap.set('n', ']b', ':bn<CR>', { desc = 'Next buffer' })
 vim.keymap.set('n', '[b', ':bp<CR>', { desc = 'Previous buffer' })
-vim.keymap.set('n', '<leader>x', ':bw<CR>', { desc = 'Close current buffer' })
+vim.keymap.set('n', '<leader>x', function()
+  MiniBufremove.wipeout()
+end, { desc = 'Close current buffer' })
 vim.keymap.set('n', '<leader>X', ':bufdo bw<CR>', { desc = 'Close all buffers' })
 
 -- Quickfix list
@@ -924,6 +926,9 @@ require('lazy').setup({
       statusline.section_location = function()
         return '%2l/%2L:%-2v'
       end
+
+      -- Close buffers preserving window layout
+      require('mini.bufremove').setup()
 
       -- ... and there is more!
       --  Check out: https://github.com/echasnovski/mini.nvim
