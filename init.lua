@@ -195,8 +195,8 @@ vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper win
 
 -- Buffers
 vim.keymap.set('n', 'gb', '', { desc = 'Buffers' })
-vim.keymap.set('n', 'gbn', ':bn<CR>', { desc = 'Go to [N]ext [B]uffer' })
-vim.keymap.set('n', 'gbp', ':bp<CR>', { desc = 'Go to [P]revious [B]uffer' })
+vim.keymap.set('n', 'gbn', ':bn<CR>', { desc = 'Go to next buffer' })
+vim.keymap.set('n', 'gbp', ':bp<CR>', { desc = 'Go to previous buffer' })
 vim.keymap.set('n', ']b', ':bn<CR>', { desc = 'Next buffer' })
 vim.keymap.set('n', '[b', ':bp<CR>', { desc = 'Previous buffer' })
 vim.keymap.set('n', '<leader>x', function()
@@ -205,11 +205,11 @@ end, { desc = 'Close current buffer' })
 vim.keymap.set('n', '<leader>X', ':bufdo bw<CR>', { desc = 'Close all buffers' })
 
 -- Quickfix list
-vim.keymap.set('n', 'gq', '', { desc = '[Q]uickfix list' })
-vim.keymap.set('n', 'gqo', ':copen<CR>', { desc = '[O]pen the [Q]uickfix list' })
-vim.keymap.set('n', 'gqc', ':cclose<CR>', { desc = '[C]lose the [Q]uickfix list' })
-vim.keymap.set('n', ']q', ':cnext<CR>', { desc = '[G]o to [N]ext [Q]uickfix list entry' })
-vim.keymap.set('n', '[q', ':cprev<CR>', { desc = '[G]o to [P]rev [Q]uickfix list entry' })
+vim.keymap.set('n', 'gq', '', { desc = 'Quickfix list' })
+vim.keymap.set('n', 'gqo', ':copen<CR>', { desc = 'Open the quickfix list' })
+vim.keymap.set('n', 'gqc', ':cclose<CR>', { desc = 'Close the quickfix list' })
+vim.keymap.set('n', ']q', ':cnext<CR>', { desc = 'Go to next quickfix list entry' })
+vim.keymap.set('n', '[q', ':cprev<CR>', { desc = 'Go to prev quickfix list entry' })
 
 -- Code folding
 vim.opt.foldmethod = 'expr'
