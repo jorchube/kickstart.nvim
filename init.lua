@@ -943,6 +943,9 @@ require('lazy').setup({
       -- Close buffers preserving window layout
       require('mini.bufremove').setup()
 
+      -- Autopair brackets
+      require('mini.pairs').setup()
+
       -- ... and there is more!
       --  Check out: https://github.com/echasnovski/mini.nvim
     end,
