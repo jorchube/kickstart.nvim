@@ -213,8 +213,8 @@ vim.keymap.set('n', ']q', ':cnext<CR>', { desc = 'Go to next quickfix list entry
 vim.keymap.set('n', '[q', ':cprev<CR>', { desc = 'Go to prev quickfix list entry' })
 
 -- Jumplist
-vim.keymap.set('n', ']l', ':lnext<CR>', { desc = 'Go to next jumplist entry' })
-vim.keymap.set('n', '[l', ':lprev<CR>', { desc = 'Go to prev jumplist entry' })
+vim.keymap.set('n', ']j', ':lnext<CR>', { desc = 'Go to next jumplist entry' })
+vim.keymap.set('n', '[j', ':lprev<CR>', { desc = 'Go to prev jumplist entry' })
 
 -- Code folding
 vim.opt.foldmethod = 'expr'
