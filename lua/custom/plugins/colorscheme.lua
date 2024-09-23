@@ -5,6 +5,9 @@ return {
   },
   {
     'Mofiqul/vscode.nvim',
+    init = function()
+      vim.cmd.colorscheme 'vscode'
+    end,
   },
   {
     'navarasu/onedark.nvim',
@@ -17,8 +20,5 @@ return {
   },
   {
     'xiantang/darcula-dark.nvim',
-    init = function()
-      vim.cmd.colorscheme 'darcula-dark'
-    end,
   },
 }
