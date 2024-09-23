@@ -2,12 +2,12 @@ return {
   {
     'catppuccin/nvim',
     name = 'catppuccin',
+    init = function()
+      vim.cmd.colorscheme 'catppuccin-frappe'
+    end,
   },
   {
     'Mofiqul/vscode.nvim',
-    init = function()
-      vim.cmd.colorscheme 'vscode'
-    end,
   },
   {
     'navarasu/onedark.nvim',
@@ -20,5 +20,8 @@ return {
   },
   {
     'xiantang/darcula-dark.nvim',
+  },
+  {
+    'Shatur/neovim-ayu',
   },
 }
