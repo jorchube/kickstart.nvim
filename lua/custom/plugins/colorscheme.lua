@@ -24,4 +24,7 @@ return {
   {
     'Shatur/neovim-ayu',
   },
+  {
+    'rmehri01/onenord.nvim',
+  },
 }
