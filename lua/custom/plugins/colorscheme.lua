@@ -2,9 +2,6 @@ return {
   {
     'catppuccin/nvim',
     name = 'catppuccin',
-    init = function()
-      vim.cmd.colorscheme 'catppuccin-frappe'
-    end,
   },
   {
     'Mofiqul/vscode.nvim',
@@ -26,5 +23,8 @@ return {
   },
   {
     'rmehri01/onenord.nvim',
+    init = function()
+      vim.cmd.colorscheme 'onenord'
+    end,
   },
 }
