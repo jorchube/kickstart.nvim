@@ -134,7 +134,7 @@ examples of adding popularly requested plugins.
 * Why is the kickstart `init.lua` a single file? Wouldn't it make sense to split it into multiple files?
   * The main purpose of kickstart is to serve as a teaching tool and a reference
     configuration that someone can easily use to `git clone` as a basis for their own.
-    As you progress in learning Neovim and Lua, you might consider splitting `init.lua`
+    As you progress in learning Neovim and lua, you might consider splitting `init.lua`
     into smaller parts. A fork of kickstart that does this while maintaining the 
     same functionality is available here:
     * [kickstart-modular.nvim](https://github.com/dam9000/kickstart-modular.nvim)

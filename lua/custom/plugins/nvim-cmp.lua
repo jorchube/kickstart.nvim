@@ -4,7 +4,7 @@ return { -- Autocompletion
   dependencies = {
     -- Snippet Engine & its associated nvim-cmp source
     {
-      'L3MON4D3/LuaSnip',
+      'L3MON4D3/luaSnip',
       build = (function()
         if vim.fn.has 'win32' == 1 or vim.fn.executable 'make' == 0 then
           return
@@ -58,7 +58,7 @@ return { -- Autocompletion
       sources = {
         {
           name = 'lazydev',
-          -- set group index to 0 to skip loading LuaLS completions as lazydev recommends it
+          -- set group index to 0 to skip loading luaLS completions as lazydev recommends it
           group_index = 0,
         },
         { name = 'nvim_lsp' },
