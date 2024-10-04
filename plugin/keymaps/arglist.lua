@@ -8,5 +8,3 @@ vim.keymap.set('n', '<leader>1', ':1argu<CR>', { desc = 'File 1 in arglist' })
 vim.keymap.set('n', '<leader>2', ':2argu<CR>', { desc = 'File 2 in arglist' })
 vim.keymap.set('n', '<leader>3', ':3argu<CR>', { desc = 'File 3 in arglist' })
 vim.keymap.set('n', '<leader>4', ':4argu<CR>', { desc = 'File 4 in arglist' })
-
--- vim: ts=2 sts=2 sw=2 et

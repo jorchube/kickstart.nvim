@@ -1,0 +1,5 @@
+vim.keymap.set('n', 'gq', '', { desc = 'Quickfix list' })
+vim.keymap.set('n', 'gqo', ':copen<CR>', { desc = 'Open the quickfix list' })
+vim.keymap.set('n', 'gqc', ':cclose<CR>', { desc = 'Close the quickfix list' })
+vim.keymap.set('n', ']q', ':cnext<CR>', { desc = 'Go to next quickfix list entry' })
+vim.keymap.set('n', '[q', ':cprev<CR>', { desc = 'Go to prev quickfix list entry' })
