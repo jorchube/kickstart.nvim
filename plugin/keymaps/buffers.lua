@@ -4,6 +4,7 @@ vim.keymap.set('n', 'gbp', ':bp<CR>', { desc = 'Go to previous buffer' })
 vim.keymap.set('n', ']b', ':bn<CR>', { desc = 'Next buffer' })
 vim.keymap.set('n', '[b', ':bp<CR>', { desc = 'Previous buffer' })
 vim.keymap.set('n', '<leader>x', function()
-  MiniBufremove.wipeout()
+  local minibufrm = require 'mini.bufremove'
+  minibufrm.wipeout()
 end, { desc = 'Close current buffer' })
 vim.keymap.set('n', '<leader>X', ':bufdo bw<CR>', { desc = 'Close all buffers' })
